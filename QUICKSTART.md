@@ -1,16 +1,16 @@
 # Guide de Démarrage Rapide - Projet Spark E-commerce
 
-## 🎯 Objectif
+## Objectif
 Analyse du comportement d'achat des clients e-commerce avec Apache Spark
 
-## 👥 Équipe
+## Équipe
 - **ILBOUDO P. Daniel Glorieux** - Data Ingestion & Préparation ✅
 - **PITROIPA Soraya** - Transformations & Jointures
 - **KONE Khalis Aïman** - Analyses & Visualisations
 
 ---
 
-## ⚡ Démarrage Rapide (5 minutes)
+## Démarrage Rapide
 
 ### 1. Installation
 
@@ -28,7 +28,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-### 2. Générer les Données (DÉJÀ FAIT ✅)
+### 2. Générer les Données
 
 ```powershell
 # Les datasets sont déjà générés dans data/raw/
@@ -55,7 +55,7 @@ jupyter notebook
 
 ---
 
-## 📊 Ce que Contient le Projet
+## Ce que Contient le Projet
 
 ### Part 1: Data Ingestion & Préparation (Daniel) ✅
 
@@ -92,7 +92,7 @@ df_orders = spark.read.csv("data/raw/orders.csv", header=True, inferSchema=True)
 
 ---
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```
 nouveau_projet/
@@ -117,7 +117,7 @@ nouveau_projet/
 
 ---
 
-## 🔧 Commandes Utiles
+## Commandes Utiles
 
 ### Gestion Environnement
 ```powershell
@@ -139,25 +139,11 @@ jupyter notebook
 # Lancer JupyterLab (interface moderne)
 jupyter lab
 ```
-
-### Git
-```powershell
-# Voir le statut
-git status
-
-# Voir l'historique
-git log --oneline
-
-# Créer une branche pour les autres membres
-git checkout -b soraya-transformations
-git checkout -b khalis-analyses
-```
-
 ---
 
-## 📊 Statistiques des Datasets
+## Statistiques des Datasets
 
-### Customers (Brut → Clean)
+### Customers 
 | Métrique | Brut | Clean | Écart |
 |----------|------|-------|-------|
 | Lignes | 150,000 | ~147,000 | -2% |
@@ -166,7 +152,7 @@ git checkout -b khalis-analyses
 | Valeurs NULL (city) | 2,221 | 0 | ✅ |
 | total_spent < 0 | 125 | 0 | ✅ |
 
-### Orders (Brut → Clean)
+### Orders
 | Métrique | Brut | Clean | Écart |
 |----------|------|-------|-------|
 | Lignes | 200,000 | ~194,000 | -3% |
@@ -177,7 +163,7 @@ git checkout -b khalis-analyses
 
 ---
 
-## 🎯 Prochaines Étapes (Soraya & Khalis)
+## Prochaines Étapes (Soraya & Khalis)
 
 ### Part 2: Transformations & Jointures (Soraya)
 
@@ -222,7 +208,7 @@ df_joined = df_orders.join(df_customers, "customer_id", "inner")
 
 ---
 
-## 🐛 Résolution de Problèmes
+## Résolution de Problèmes
 
 ### Erreur "Spark not found"
 ```powershell
@@ -246,7 +232,7 @@ python src\generate_datasets.py
 
 ---
 
-## 📚 Ressources
+## Ressources
 
 ### Documentation
 - [PySpark Documentation](https://spark.apache.org/docs/latest/api/python/)
@@ -257,39 +243,3 @@ python src\generate_datasets.py
 - [Spark by Examples](https://sparkbyexamples.com/pyspark-tutorial/)
 
 ---
-
-## ✅ Checklist Part 1 (Daniel)
-
-- [x] Choix de 2 datasets volumineux (≥100k lignes)
-- [x] Définition du problème métier
-- [x] Justification du choix
-- [x] Chargement des datasets avec Spark
-- [x] Vérification des schémas
-- [x] Gestion des valeurs manquantes
-- [x] Normalisation des formats
-- [x] Préparation des colonnes pour jointure
-- [x] Justification des transformations
-- [x] DataFrames propres et exploitables
-- [x] Documentation dans README
-- [x] Commit Git: `data_ingestion_cleaning`
-
----
-
-## 📞 Contact
-
-**ILBOUDO P. Daniel Glorieux**  
-Part 1: Data Ingestion & Préparation  
-Statut: ✅ Complété
-
-**Membres du groupe:**
-- ILBOUDO P. Daniel Glorieux
-- PITROIPA Soraya
-- KONE Khalis Aïman
-
----
-
-## 🎉 Félicitations!
-
-Vous avez maintenant un pipeline de données propre et prêt pour l'analyse. Les datasets sont nettoyés, validés et optimisés pour les étapes suivantes.
-
-**Prochaine étape**: Passer le projet à Soraya et Khalis pour continuer! 🚀
