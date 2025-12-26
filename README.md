@@ -1,13 +1,13 @@
 # Projet d'Analyse de Données avec Apache Spark
 
-## 👥 Membres du Groupe
+##  Membres du Groupe
 - **ILBOUDO P. Daniel Glorieux** - Data Ingestion & Préparation
 - **PITROIPA Soraya** - Transformations & Jointures
 - **KONE Khalis Aïman** - Analyses & Visualisations
 
 ---
 
-## 📊 Choix des Datasets
+##  Choix des Datasets
 
 ### Problématique Métier
 **Analyse du comportement d'achat des clients e-commerce pour optimiser les ventes et la satisfaction client**
@@ -53,10 +53,10 @@ Objectifs :
 
 ### Justification du Choix
 
-✅ **Volumétrie suffisante** : 150k+ et 200k+ lignes
-✅ **Jointure naturelle** : `customer_id` permet des analyses riches
-✅ **Problème métier réel** : applicable à tout e-commerce
-✅ **Diversité des analyses possibles** :
+ **Volumétrie suffisante** : 150k+ et 200k+ lignes
+ **Jointure naturelle** : `customer_id` permet des analyses riches
+ **Problème métier réel** : applicable à tout e-commerce
+ **Diversité des analyses possibles** :
   - Segmentation clients
   - Analyse temporelle
   - Analyse géographique
@@ -161,10 +161,10 @@ df_orders = df_orders.withColumn(
 **Colonne de jointure** : `customer_id`
 
 Vérifications effectuées :
-- ✅ Pas de valeurs NULL dans `customer_id` des deux datasets
-- ✅ Tous les `customer_id` dans orders existent dans customers
-- ✅ Types cohérents (Integer)
-- ✅ Clé primaire respectée (customers.customer_id unique)
+-  Pas de valeurs NULL dans `customer_id` des deux datasets
+-  Tous les `customer_id` dans orders existent dans customers
+-  Types cohérents (Integer)
+-  Clé primaire respectée (customers.customer_id unique)
 
 ### 4. Justification des Choix
 
@@ -193,12 +193,12 @@ Vérifications effectuées :
 **Customers Clean**
 - Lignes avant : ~150,000
 - Lignes après : ~147,000 (-2%)
-- Prêt pour jointure : ✅
+- Prêt pour jointure : 
 
 **Orders Clean**
 - Lignes avant : ~200,000
 - Lignes après : ~194,000 (-3%)
-- Prêt pour jointure : ✅
+- Prêt pour jointure : 
 
 #### Formats de Sortie
 
@@ -214,7 +214,7 @@ Parquet recommandé pour les étapes suivantes (performance).
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ```bash
 # Créer environnement virtuel
@@ -226,7 +226,7 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-## 🚀 Utilisation
+##  Utilisation
 
 ```bash
 # 1. Générer les datasets
@@ -241,7 +241,7 @@ notebooks/01_data_ingestion_cleaning.ipynb
 
 ---
 
-## 📁 Structure du Projet
+##  Structure du Projet
 
 ```
 nouveau_projet/
@@ -267,7 +267,7 @@ nouveau_projet/
 
 ---
 
-## 🔄 Prochaines Étapes (Autres Membres)
+##  Prochaines Étapes (Autres Membres)
 
 ### Part 2 - Soraya : Transformations & Jointures
 - Jointure `customers ⋈ orders`
@@ -283,7 +283,7 @@ nouveau_projet/
 
 ---
 
-## 📊 Technologies
+##  Technologies
 
 - **Apache Spark 3.5+** - Traitement distribué
 - **PySpark** - API Python pour Spark
@@ -293,7 +293,7 @@ nouveau_projet/
 
 ---
 
-## 📝 Commit Git
+##  Commit Git
 
 ```bash
 git add .
@@ -303,7 +303,7 @@ git push origin main
 
 ---
 
-## 👨‍💻 Auteur - Part 1
+##  Auteur - Part 1
 
 **ILBOUDO P. Daniel Glorieux**
 - Data Ingestion & Préparation
