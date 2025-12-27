@@ -310,3 +310,8 @@ git push origin main
 - Génération des datasets
 - Nettoyage et validation
 - Préparation pour jointures
+
+- ## Part2
+**PITROIPA SORAYA
+-(Transformations & Jointures)
+-code 02_transformations_joitures.ipynb
