@@ -505,17 +505,10 @@ df_orders_clean = df_orders \
 - **Objectif** : Prédire le segment client (Bronze/Silver/Gold/Platinum)
 - **Features** : Total dépensé, nombre commandes, panier moyen, ancienneté
 - **Performance** :
-  - Accuracy : **49.5%**
-  - Precision : **36.2%**
-  - Recall : **87.5%**
-  - F1-Score : **86.8%**
-
-**Feature Importance :**
-
-1. Total_spent : 62%
-2. Order_count : 23%
-3. Avg_order_value : 11%
-4. Days_since_registration : 4%
+  - Accuracy : **49.8%**
+  - Precision : **35.0%**
+  - Recall : **49.8%**
+  - F1-Score : **33.2%**
 
 **Visualisations produites :**
 
