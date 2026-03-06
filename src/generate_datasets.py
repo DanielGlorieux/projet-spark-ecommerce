@@ -115,7 +115,7 @@ products = {
     'Clothing': ['T-Shirt', 'Jeans', 'Jacket', 'Dress', 'Shoes'],
     'Home & Garden': ['Chair', 'Table', 'Lamp', 'Sofa', 'Plant'],
     'Sports': ['Running Shoes', 'Yoga Mat', 'Bicycle', 'Dumbbells', 'Tennis Racket'],
-    'Books': ['Fiction Book', 'Cookbook', 'Biography', 'Textbook', 'Magazine'],
+    'Books': ['Fiction Book', 'Cookbook', 'Biography', 'Textbook', 'Magazine', 'Pen'],
     'Beauty': ['Perfume', 'Lipstick', 'Shampoo', 'Cream', 'Nail Polish'],
     'Toys': ['Action Figure', 'Board Game', 'Puzzle', 'Doll', 'LEGO Set'],
     'Food': ['Coffee', 'Chocolate', 'Wine', 'Cheese', 'Pasta'],
