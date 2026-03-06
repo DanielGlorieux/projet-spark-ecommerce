@@ -107,7 +107,7 @@ print("2️⃣ Génération du dataset ORDERS...")
 orders_data = []
 product_categories = [
     'Electronics', 'Clothing', 'Home & Garden', 'Sports', 
-    'Books', 'Beauty', 'Toys', 'Food', 'Automotive'
+    'Books', 'Beauty', 'Toys', 'Food', 'Automotive', 'Stationery'
 ]
 
 products = {
@@ -119,7 +119,8 @@ products = {
     'Beauty': ['Perfume', 'Lipstick', 'Shampoo', 'Cream', 'Nail Polish'],
     'Toys': ['Action Figure', 'Board Game', 'Puzzle', 'Doll', 'LEGO Set'],
     'Food': ['Coffee', 'Chocolate', 'Wine', 'Cheese', 'Pasta'],
-    'Automotive': ['Car Parts', 'Motor Oil', 'Tires', 'Battery', 'Wiper Blades']
+    'Automotive': ['Car Parts', 'Motor Oil', 'Tires', 'Battery', 'Wiper Blades'],
+    'Stationery': ['Pen', 'Pencil', 'Notebook', 'Stapler', 'Scissors']
 }
 
 payment_methods = ['Credit Card', 'PayPal', 'Bank Transfer', 'Cash on Delivery']
@@ -172,6 +173,8 @@ for i in range(1, NUM_ORDERS + 1):
         unit_price = round(random.uniform(10, 100), 2)
     elif category == 'Food':
         unit_price = round(random.uniform(5, 80), 2)
+    elif category == 'Stationery':
+        unit_price = round(random.uniform(1, 30), 2)
     else:  # Automotive
         unit_price = round(random.uniform(20, 300), 2)
     
